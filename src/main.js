@@ -8,5 +8,8 @@ Vue.config.productionTip = false
 new Vue({
   router,
   store,
-  render: h => h(App)
+  render: h => h(App),
+  async created() {
+    await this.$store.dispatch('setPeople')
+  }
 }).$mount('#app')
