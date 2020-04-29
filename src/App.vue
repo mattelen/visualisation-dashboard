@@ -3,7 +3,8 @@
     <div id="nav">
       <router-link to="/">Pie Charts</router-link> |
       <router-link to="/bar">Bar Charts</router-link> |
-      <router-link to="/editor">Editor</router-link>
+      <router-link to="/editor">Editor</router-link> |
+      <router-link to="/map">Map</router-link>
     </div>
     <router-view/>
   </div>
