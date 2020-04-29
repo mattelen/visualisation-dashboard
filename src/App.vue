@@ -2,7 +2,8 @@
   <div id="app" v-if="$store.state.peopleReady">
     <div id="nav">
       <router-link to="/">Pie Charts</router-link> |
-      <router-link to="/bar">Bar Charts</router-link>
+      <router-link to="/bar">Bar Charts</router-link> |
+      <router-link to="/editor">Editor</router-link>
     </div>
     <router-view/>
   </div>

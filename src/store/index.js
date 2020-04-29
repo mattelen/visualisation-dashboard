@@ -15,12 +15,15 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    setPeople : async (context) => {
+    getPeople : async (context) => {
         fetch('https://updates.suade.org/files/people.json').then((response) => {
           response.json().then(function (data) {
             context.commit('setPeople', data)
           })
         })
+    },
+    setPeople:  (context, data) => {
+      context.commit('setPeople', data)
     }
   },
   modules: {

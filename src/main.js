@@ -10,6 +10,6 @@ new Vue({
   store,
   render: h => h(App),
   async created() {
-    await this.$store.dispatch('setPeople')
+    await this.$store.dispatch('getPeople')
   }
 }).$mount('#app')
