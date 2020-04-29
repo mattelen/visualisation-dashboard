@@ -1,7 +1,7 @@
 <template>
     <div class="pie-charts">
-        <PieChart :chartdata="prepareData('gender', this.$store.state.people)"/>
-        <PieChart :chartdata="prepareData('eyeColor', this.$store.state.people)"/>
+        <PieChart :chartdata="prepareData('gender', this.$store.state.people)" title="Gender"/>
+        <PieChart :chartdata="prepareData('eyeColor', this.$store.state.people)" title="Eye Colour"/>
     </div>
 </template>
 

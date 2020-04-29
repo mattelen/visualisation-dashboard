@@ -1,7 +1,7 @@
 <template>
     <div class="bar-charts">
-        <BarChart :chartdata="prepareData('gender', this.$store.state.people)"/>
-        <BarChart :chartdata="prepareData('eyeColor', this.$store.state.people)"/>
+        <BarChart :chartdata="prepareData('gender', this.$store.state.people)" title="Gender"/>
+        <BarChart :chartdata="prepareData('eyeColor', this.$store.state.people)" title="Eye Colour"/>
     </div>
 </template>
 

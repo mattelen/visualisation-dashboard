@@ -15,13 +15,27 @@ export default {
             default: function () {
                 return {
                     responsive: true,
-                    maintainAspectRatio: false
+                    maintainAspectRatio: false,
+                    title : {
+                        text : ""
+                    }
                 }
             },
+        },
+        title: {
+            type: String,
+            default: function () {
+                return ""
+            }
         }
     },
     mounted () {
-        this.renderChart(this.chartdata, this.options)
+        const options = this.options
+        if(this.title.length > 0) {
+            options['title']['text'] = this.title
+            options['title']['display'] = true
+        }
+        this.renderChart(this.chartdata, options)
     }
 }
 </script>
